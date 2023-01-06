@@ -1,200 +1,42 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 50;
-exports.ids = [50];
+exports.id = "pages/pagination";
+exports.ids = ["pages/pagination"];
 exports.modules = {
 
-/***/ 2548:
+/***/ "./src/pages/pagination.mdx":
+/*!**********************************!*\
+  !*** ./src/pages/pagination.mdx ***!
+  \**********************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7834);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__]);
-_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-/*@jsxRuntime automatic @jsxImportSource react*/ 
-
-const title = "Pagination";
-const description = "In this guide, we will look at how to work with paginated responses when querying the Protocol API";
-const sections = [
-    {
-        title: "Example using cursors",
-        id: "example-using-cursors",
-        ...undefined
-    }
-];
-function _createMdxContent(props) {
-    const _components = Object.assign({
-        h1: "h1",
-        p: "p",
-        code: "code",
-        h2: "h2",
-        pre: "pre"
-    }, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components), { Row , Col , Properties , Property  } = _components;
-    if (!Col) _missingMdxReference("Col", true);
-    if (!Properties) _missingMdxReference("Properties", true);
-    if (!Property) _missingMdxReference("Property", true);
-    if (!Row) _missingMdxReference("Row", true);
-    return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.h1, {
-                children: "Pagination"
-            }),
-            "\n",
-            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [
-                    "In this guide, we will look at how to work with paginated responses when querying the Protocol API. By default, all responses limit results to ten. However, you can go as high as 100 by adding a ",
-                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                        children: "limit"
-                    }),
-                    " parameter to your requests. If you are using one of the official Protocol API client libraries, you don't need to worry about pagination, as it's all being taken care of behind the scenes."
-                ],
-                ...{
-                    className: "lead"
-                }
-            }),
-            "\n",
-            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [
-                    "When an API response returns a list of objects, no matter the amount, pagination is supported. In paginated responses, objects are nested in a ",
-                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                        children: "data"
-                    }),
-                    " attribute and have a ",
-                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                        children: "has_more"
-                    }),
-                    " attribute that indicates whether you have reached the end of the last page. You can use the ",
-                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                        children: "starting_after"
-                    }),
-                    " and ",
-                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                        children: "endding_before"
-                    }),
-                    " query parameters to browse pages."
-                ]
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.h2, {
-                id: "example-using-cursors",
-                children: "Example using cursors"
-            }),
-            "\n",
-            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Row, {
-                children: [
-                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Col, {
-                        children: [
-                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                                children: [
-                                    "In this example, we request the page that starts after the conversation with id ",
-                                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                                        children: "s4WycXedwhQrEFuM"
-                                    }),
-                                    ". As a result, we get a list of three conversations and can tell by the ",
-                                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                                        children: "has_more"
-                                    }),
-                                    " attribute that we have reached the end of the resultset."
-                                ]
-                            }),
-                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Properties, {
-                                children: [
-                                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Property, {
-                                        name: "starting_after",
-                                        type: "string",
-                                        children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                                            children: "The last ID on the page you're currently on when you want to fetch the next page."
-                                        })
-                                    }),
-                                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Property, {
-                                        name: "ending_before",
-                                        type: "string",
-                                        children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                                            children: "The first ID on the page you're currently on when you want to fetch the previous page."
-                                        })
-                                    }),
-                                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Property, {
-                                        name: "limit",
-                                        type: "integer",
-                                        children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                                            children: "Limit the number of items returned."
-                                        })
-                                    })
-                                ]
-                            })
-                        ]
-                    }),
-                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Col, {
-                        children: [
-                            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.pre, {
-                                language: "bash",
-                                code: 'curl -G https://api.protocol.chat/v1/conversations \\\n  -H "Authorization: Bearer {token}" \\\n  -d starting_after="s4WycXedwhQrEFuM" \\\n  -d limit=10\n',
-                                children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                                    className: "language-bash",
-                                    children: '<span><span style="color: var(--shiki-color-text)">curl -G https://api.protocol.chat/v1/conversations \\</span></span>\n<span><span style="color: var(--shiki-color-text)">  -H </span><span style="color: var(--shiki-token-string-expression)">&quot;Authorization: Bearer {token}&quot;</span><span style="color: var(--shiki-color-text)"> \\</span></span>\n<span><span style="color: var(--shiki-color-text)">  -d starting_after=</span><span style="color: var(--shiki-token-string-expression)">&quot;s4WycXedwhQrEFuM&quot;</span><span style="color: var(--shiki-color-text)"> \\</span></span>\n<span><span style="color: var(--shiki-color-text)">  -d limit=10</span></span>\n<span></span>'
-                                }),
-                                ...{
-                                    title: "Manual pagination using cURL"
-                                }
-                            }),
-                            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.pre, {
-                                language: "json",
-                                code: '{\n  "has_more": false,\n  "data": [\n    {\n      "id": "WAz8eIbvDR60rouK",\n      // ...\n    },\n    {\n      "id": "hSIhXBhNe8X1d8Et"\n      // ...\n    },\n    {\n      "id": "fbwYwpi9C2ybt6Yb"\n      // ...\n    }\n  ]\n}\n',
-                                children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                                    className: "language-json",
-                                    children: '<span><span style="color: var(--shiki-color-text)">{</span></span>\n<span><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">&quot;has_more&quot;</span><span style="color: var(--shiki-token-punctuation)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">false</span><span style="color: var(--shiki-token-punctuation)">,</span></span>\n<span><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">&quot;data&quot;</span><span style="color: var(--shiki-token-punctuation)">:</span><span style="color: var(--shiki-color-text)"> [</span></span>\n<span><span style="color: var(--shiki-color-text)">    {</span></span>\n<span><span style="color: var(--shiki-color-text)">      </span><span style="color: var(--shiki-token-keyword)">&quot;id&quot;</span><span style="color: var(--shiki-token-punctuation)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;WAz8eIbvDR60rouK&quot;</span><span style="color: var(--shiki-token-punctuation)">,</span></span>\n<span><span style="color: var(--shiki-color-text)">      </span><span style="color: var(--shiki-token-comment)">// ...</span></span>\n<span><span style="color: var(--shiki-color-text)">    }</span><span style="color: var(--shiki-token-punctuation)">,</span></span>\n<span><span style="color: var(--shiki-color-text)">    {</span></span>\n<span><span style="color: var(--shiki-color-text)">      </span><span style="color: var(--shiki-token-keyword)">&quot;id&quot;</span><span style="color: var(--shiki-token-punctuation)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;hSIhXBhNe8X1d8Et&quot;</span></span>\n<span><span style="color: var(--shiki-color-text)">      </span><span style="color: var(--shiki-token-comment)">// ...</span></span>\n<span><span style="color: var(--shiki-color-text)">    }</span><span style="color: var(--shiki-token-punctuation)">,</span></span>\n<span><span style="color: var(--shiki-color-text)">    {</span></span>\n<span><span style="color: var(--shiki-color-text)">      </span><span style="color: var(--shiki-token-keyword)">&quot;id&quot;</span><span style="color: var(--shiki-token-punctuation)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;fbwYwpi9C2ybt6Yb&quot;</span></span>\n<span><span style="color: var(--shiki-color-text)">      </span><span style="color: var(--shiki-token-comment)">// ...</span></span>\n<span><span style="color: var(--shiki-color-text)">    }</span></span>\n<span><span style="color: var(--shiki-color-text)">  ]</span></span>\n<span><span style="color: var(--shiki-color-text)">}</span></span>\n<span></span>'
-                                }),
-                                ...{
-                                    title: "Paginated response"
-                                }
-                            })
-                        ]
-                    })
-                ]
-            })
-        ]
-    });
-}
-function MDXContent(props = {}) {
-    const { wrapper: MDXLayout  } = Object.assign({}, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components);
-    return MDXLayout ? react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(MDXLayout, Object.assign({}, props, {
-        children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_createMdxContent, props)
-    })) : _createMdxContent(props);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MDXContent);
-function _missingMdxReference(id, component) {
-    throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-const getStaticProps = ()=>({
-        props: JSON.parse(JSON.stringify({
-            _provideComponents: _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents,
-            description,
-            sections,
-            title
-        }))
-    });
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"getStaticProps\": () => (/* binding */ getStaticProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mdx-js/react */ \"@mdx-js/react\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__]);\n_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n/*@jsxRuntime automatic @jsxImportSource react*/ \n\nconst title = \"Open Policy Agent (OPA)\";\nconst description = \"In this guide, we will look at how to work with paginated responses when querying the Protocol API\";\nconst sections = [\n    {\n        title: \"Services\",\n        id: \"services\",\n        ...undefined\n    },\n    {\n        title: \"Solutions\",\n        id: \"solutions\",\n        ...undefined\n    }\n];\nfunction _createMdxContent(props) {\n    const _components = Object.assign({\n        h1: \"h1\",\n        p: \"p\",\n        code: \"code\",\n        h2: \"h2\",\n        pre: \"pre\"\n    }, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components), { Row , Col , Properties , Property  } = _components;\n    if (!Col) _missingMdxReference(\"Col\", true, \"13:3-29:9\");\n    if (!Properties) _missingMdxReference(\"Properties\", true, \"17:5-27:18\");\n    if (!Property) _missingMdxReference(\"Property\", true, \"18:7-20:18\");\n    if (!Row) _missingMdxReference(\"Row\", true, \"12:1-60:7\");\n    return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h1, {\n                children: \"Open Policy Agent (OPA)\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {\n                children: [\n                    \"In this guide, we will look at how to work with paginated responses when querying the Protocol API. By default, all responses limit results to ten. However, you can go as high as 100 by adding a \",\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                        children: \"limit\"\n                    }),\n                    \" parameter to your requests. If you are using one of the official Protocol API client libraries, you don't need to worry about pagination, as it's all being taken care of behind the scenes.\"\n                ],\n                ...{\n                    className: \"lead\"\n                }\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {\n                children: [\n                    \"When an API response returns a list of objects, no matter the amount, pagination is supported. In paginated responses, objects are nested in a \",\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                        children: \"data\"\n                    }),\n                    \" attribute and have a \",\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                        children: \"has_more\"\n                    }),\n                    \" attribute that indicates whether you have reached the end of the last page. You can use the \",\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                        children: \"starting_after\"\n                    }),\n                    \" and \",\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                        children: \"endding_before\"\n                    }),\n                    \" query parameters to browse pages.\"\n                ]\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {\n                id: \"services\",\n                children: \"Services\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Row, {\n                children: [\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Col, {\n                        children: [\n                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {\n                                children: [\n                                    \"In this example, we request the page that starts after the conversation with id \",\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                                        children: \"s4WycXedwhQrEFuM\"\n                                    }),\n                                    \". As a result, we get a list of three conversations and can tell by the \",\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                                        children: \"has_more\"\n                                    }),\n                                    \" attribute that we have reached the end of the resultset.\"\n                                ]\n                            }),\n                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Properties, {\n                                children: [\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Property, {\n                                        name: \"starting_after\",\n                                        type: \"string\",\n                                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                                            children: \"The last ID on the page you're currently on when you want to fetch the next page.\"\n                                        })\n                                    }),\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Property, {\n                                        name: \"ending_before\",\n                                        type: \"string\",\n                                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                                            children: \"The first ID on the page you're currently on when you want to fetch the previous page.\"\n                                        })\n                                    }),\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Property, {\n                                        name: \"limit\",\n                                        type: \"integer\",\n                                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                                            children: \"Limit the number of items returned.\"\n                                        })\n                                    })\n                                ]\n                            })\n                        ]\n                    }),\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Col, {\n                        children: [\n                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {\n                                language: \"bash\",\n                                code: 'curl -G https://api.protocol.chat/v1/conversations \\\\\\n  -H \"Authorization: Bearer {token}\" \\\\\\n  -d starting_after=\"s4WycXedwhQrEFuM\" \\\\\\n  -d limit=10\\n',\n                                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                                    className: \"language-bash\",\n                                    children: '<span><span style=\"color: var(--shiki-color-text)\">curl -G https://api.protocol.chat/v1/conversations \\\\</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  -H </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;Authorization: Bearer {token}&quot;</span><span style=\"color: var(--shiki-color-text)\"> \\\\</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  -d starting_after=</span><span style=\"color: var(--shiki-token-string-expression)\">&quot;s4WycXedwhQrEFuM&quot;</span><span style=\"color: var(--shiki-color-text)\"> \\\\</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  -d limit=10</span></span>\\n<span></span>'\n                                }),\n                                ...{\n                                    title: \"Manual pagination using cURL\"\n                                }\n                            }),\n                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {\n                                language: \"json\",\n                                code: '{\\n  \"has_more\": false,\\n  \"data\": [\\n    {\\n      \"id\": \"WAz8eIbvDR60rouK\",\\n      // ...\\n    },\\n    {\\n      \"id\": \"hSIhXBhNe8X1d8Et\"\\n      // ...\\n    },\\n    {\\n      \"id\": \"fbwYwpi9C2ybt6Yb\"\\n      // ...\\n    }\\n  ]\\n}\\n',\n                                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                                    className: \"language-json\",\n                                    children: '<span><span style=\"color: var(--shiki-color-text)\">{</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  </span><span style=\"color: var(--shiki-token-keyword)\">&quot;has_more&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">:</span><span style=\"color: var(--shiki-color-text)\"> </span><span style=\"color: var(--shiki-token-constant)\">false</span><span style=\"color: var(--shiki-token-punctuation)\">,</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  </span><span style=\"color: var(--shiki-token-keyword)\">&quot;data&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">:</span><span style=\"color: var(--shiki-color-text)\"> [</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    {</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-keyword)\">&quot;id&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">:</span><span style=\"color: var(--shiki-color-text)\"> </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;WAz8eIbvDR60rouK&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">,</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-comment)\">// ...</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    }</span><span style=\"color: var(--shiki-token-punctuation)\">,</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    {</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-keyword)\">&quot;id&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">:</span><span style=\"color: var(--shiki-color-text)\"> </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;hSIhXBhNe8X1d8Et&quot;</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-comment)\">// ...</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    }</span><span style=\"color: var(--shiki-token-punctuation)\">,</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    {</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-keyword)\">&quot;id&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">:</span><span style=\"color: var(--shiki-color-text)\"> </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;fbwYwpi9C2ybt6Yb&quot;</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-comment)\">// ...</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    }</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  ]</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">}</span></span>\\n<span></span>'\n                                }),\n                                ...{\n                                    title: \"Paginated response\"\n                                }\n                            })\n                        ]\n                    })\n                ]\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {\n                id: \"solutions\",\n                children: \"Solutions\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Row, {\n                children: [\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Col, {\n                        children: [\n                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {\n                                children: [\n                                    \"In this example, we request the page that starts after the conversation with id \",\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                                        children: \"s4WycXedwhQrEFuM\"\n                                    }),\n                                    \". As a result, we get a list of three conversations and can tell by the \",\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                                        children: \"has_more\"\n                                    }),\n                                    \" attribute that we have reached the end of the resultset.\"\n                                ]\n                            }),\n                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Properties, {\n                                children: [\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Property, {\n                                        name: \"starting_after\",\n                                        type: \"string\",\n                                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                                            children: \"The last ID on the page you're currently on when you want to fetch the next page.\"\n                                        })\n                                    }),\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Property, {\n                                        name: \"ending_before\",\n                                        type: \"string\",\n                                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                                            children: \"The first ID on the page you're currently on when you want to fetch the previous page.\"\n                                        })\n                                    }),\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Property, {\n                                        name: \"limit\",\n                                        type: \"integer\",\n                                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                                            children: \"Limit the number of items returned.\"\n                                        })\n                                    })\n                                ]\n                            })\n                        ]\n                    }),\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Col, {\n                        children: [\n                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {\n                                language: \"bash\",\n                                code: 'curl -G https://api.protocol.chat/v1/conversations \\\\\\n  -H \"Authorization: Bearer {token}\" \\\\\\n  -d starting_after=\"s4WycXedwhQrEFuM\" \\\\\\n  -d limit=10\\n',\n                                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                                    className: \"language-bash\",\n                                    children: '<span><span style=\"color: var(--shiki-color-text)\">curl -G https://api.protocol.chat/v1/conversations \\\\</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  -H </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;Authorization: Bearer {token}&quot;</span><span style=\"color: var(--shiki-color-text)\"> \\\\</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  -d starting_after=</span><span style=\"color: var(--shiki-token-string-expression)\">&quot;s4WycXedwhQrEFuM&quot;</span><span style=\"color: var(--shiki-color-text)\"> \\\\</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  -d limit=10</span></span>\\n<span></span>'\n                                }),\n                                ...{\n                                    title: \"Manual pagination using cURL\"\n                                }\n                            }),\n                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {\n                                language: \"json\",\n                                code: '{\\n  \"has_more\": false,\\n  \"data\": [\\n    {\\n      \"id\": \"WAz8eIbvDR60rouK\",\\n      // ...\\n    },\\n    {\\n      \"id\": \"hSIhXBhNe8X1d8Et\"\\n      // ...\\n    },\\n    {\\n      \"id\": \"fbwYwpi9C2ybt6Yb\"\\n      // ...\\n    }\\n  ]\\n}\\n',\n                                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                                    className: \"language-json\",\n                                    children: '<span><span style=\"color: var(--shiki-color-text)\">{</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  </span><span style=\"color: var(--shiki-token-keyword)\">&quot;has_more&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">:</span><span style=\"color: var(--shiki-color-text)\"> </span><span style=\"color: var(--shiki-token-constant)\">false</span><span style=\"color: var(--shiki-token-punctuation)\">,</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  </span><span style=\"color: var(--shiki-token-keyword)\">&quot;data&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">:</span><span style=\"color: var(--shiki-color-text)\"> [</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    {</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-keyword)\">&quot;id&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">:</span><span style=\"color: var(--shiki-color-text)\"> </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;WAz8eIbvDR60rouK&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">,</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-comment)\">// ...</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    }</span><span style=\"color: var(--shiki-token-punctuation)\">,</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    {</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-keyword)\">&quot;id&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">:</span><span style=\"color: var(--shiki-color-text)\"> </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;hSIhXBhNe8X1d8Et&quot;</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-comment)\">// ...</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    }</span><span style=\"color: var(--shiki-token-punctuation)\">,</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    {</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-keyword)\">&quot;id&quot;</span><span style=\"color: var(--shiki-token-punctuation)\">:</span><span style=\"color: var(--shiki-color-text)\"> </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;fbwYwpi9C2ybt6Yb&quot;</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">      </span><span style=\"color: var(--shiki-token-comment)\">// ...</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">    }</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  ]</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">}</span></span>\\n<span></span>'\n                                }),\n                                ...{\n                                    title: \"Paginated response\"\n                                }\n                            })\n                        ]\n                    })\n                ]\n            })\n        ]\n    });\n}\nfunction MDXContent(props = {}) {\n    const { wrapper: MDXLayout  } = Object.assign({}, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components);\n    return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, Object.assign({}, props, {\n        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, props)\n    })) : _createMdxContent(props);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MDXContent);\nfunction _missingMdxReference(id, component, place) {\n    throw new Error(\"Expected \" + (component ? \"component\" : \"object\") + \" `\" + id + \"` to be defined: you likely forgot to import, pass, or provide it.\" + (place ? \"\\nIt’s referenced in your code at `\" + place + \"` in `/Users/mike/Projects/tailwindui-protocol/Zelar/src/pages/pagination.mdx`\" : \"\"));\n}\nconst getStaticProps = ()=>({\n        props: JSON.parse(JSON.stringify({\n            _provideComponents: _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents,\n            description,\n            sections,\n            title\n        }))\n    });\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvcGFnaW5hdGlvbi5tZHguanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7TUFBYUEsY0FDWDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzswQkFFQTs7Ozs7b0JBRUY7b0JBQUFDLHNEQUFBQSxDQUFBQyxZQUFBQyxJQUFBOzs7b0JBQTBNO2lCQUFBOzs7Ozs7OztvQkFFMU07b0JBQUFGLHNEQUFBQSxDQUFBQyxZQUFBQyxJQUFBOzs7b0JBQXFKO29CQUFBRixzREFBQUEsQ0FBQUMsWUFBQUMsSUFBQTs7O29CQUFnQztvQkFBQUYsc0RBQUFBLENBQUFDLFlBQUFDLElBQUE7OztvQkFBNkc7b0JBQUFGLHNEQUFBQSxDQUFBQyxZQUFBQyxJQUFBOzs7b0JBQXFCO2lCQUFBOzs7OzswQkFFcFQ7Ozs7Ozs7OztvQ0FLQztvQ0FBQUYsc0RBQUFBLENBQUFDLFlBQUFDLElBQUE7OztvQ0FBa0c7b0NBQUFGLHNEQUFBQSxDQUFBQyxZQUFBQyxJQUFBOzs7b0NBQWtGO2lDQUFBOzs7Ozs7OztzREFJaEw7Ozs7Ozs7c0RBR0E7Ozs7Ozs7c0RBR0E7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzBCQXFDTDs7Ozs7Ozs7O29DQUtDO29DQUFBRixzREFBQUEsQ0FBQUMsWUFBQUMsSUFBQTs7O29DQUFrRztvQ0FBQUYsc0RBQUFBLENBQUFDLFlBQUFDLElBQUE7OztvQ0FBa0Y7aUNBQUE7Ozs7Ozs7O3NEQUloTDs7Ozs7OztzREFHQTs7Ozs7OztzREFHQSIsInNvdXJjZXMiOlsid2VicGFjazovL3RhaWx3aW5kdWktcHJvdG9jb2wvLi9zcmMvcGFnZXMvcGFnaW5hdGlvbi5tZHg/YTZiMyJdLCJuYW1lcyI6WyJkZXNjcmlwdGlvbiIsIl9qc3giLCJfY29tcG9uZW50cyIsImNvZGUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/pages/pagination.mdx\n");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-runtime":
+/*!************************************!*\
+  !*** external "react/jsx-runtime" ***!
+  \************************************/
 /***/ ((module) => {
 
 module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
-/***/ 7834:
+/***/ "@mdx-js/react":
+/*!********************************!*\
+  !*** external "@mdx-js/react" ***!
+  \********************************/
 /***/ ((module) => {
 
 module.exports = import("@mdx-js/react");;
@@ -208,7 +50,7 @@ module.exports = import("@mdx-js/react");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(2548));
+var __webpack_exports__ = (__webpack_exec__("./src/pages/pagination.mdx"));
 module.exports = __webpack_exports__;
 
 })();

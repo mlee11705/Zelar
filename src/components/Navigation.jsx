@@ -187,8 +187,8 @@ export const navigation = [
   {
     title: 'Services',
     links: [
-      { title: 'Introduction', href: '/' },
-      { title: 'Quickstart', href: '/quickstart' },
+      { title: 'Overview', href: '/' },
+      { title: 'Case studies', href: '/quickstart' },
       { title: 'Kubernetes Consulting', href: '/sdks' },
       { title: 'Cloud Native Consulting', href: '/authentication' },
       { title: 'Open Policy Agent', href: '/pagination' },
@@ -198,7 +198,7 @@ export const navigation = [
     ],
   },
   {
-    title: 'Case Studies',
+    title: 'Blog',
     links: [
       { title: 'Celito Tech', href: '/contacts' },
       { title: 'Test Prep 24', href: '/conversations' },
@@ -207,13 +207,18 @@ export const navigation = [
       { title: 'Nexon Paints', href: '/attachments' },
     ],
   },
+  {
+    title: 'Products',
+    links: [
+      { title: 'Klusternetes', href: '/klusternetes' },
+    ],
+  },
 ]
 
 export function Navigation(props) {
   return (
     <nav {...props}>
       <ul role="list">
-        <TopLevelNavItem href="/">Case Studies</TopLevelNavItem>
         <TopLevelNavItem href="#">Team</TopLevelNavItem>
         <TopLevelNavItem href="#">Blog</TopLevelNavItem>
         {navigation.map((group, groupIndex) => (

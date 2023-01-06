@@ -1,203 +1,42 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 298;
-exports.ids = [298];
+exports.id = "pages/errors";
+exports.ids = ["pages/errors"];
 exports.modules = {
 
-/***/ 1582:
+/***/ "./src/pages/errors.mdx":
+/*!******************************!*\
+  !*** ./src/pages/errors.mdx ***!
+  \******************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7834);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__]);
-_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-/*@jsxRuntime automatic @jsxImportSource react*/ 
-
-const title = "Errors";
-const description = "In this guide, we will talk about what happens when something goes wrong while you work with the API.";
-const sections = [
-    {
-        title: "Status codes",
-        id: "status-codes",
-        ...undefined
-    },
-    {
-        title: "Error types",
-        id: "error-types",
-        ...undefined
-    }
-];
-function _createMdxContent(props) {
-    const _components = Object.assign({
-        h1: "h1",
-        p: "p",
-        hr: "hr",
-        h2: "h2",
-        em: "em",
-        pre: "pre",
-        code: "code"
-    }, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components), { Note , Properties , Property , Row , Col  } = _components;
-    if (!Col) _missingMdxReference("Col", true);
-    if (!Note) _missingMdxReference("Note", true);
-    if (!Properties) _missingMdxReference("Properties", true);
-    if (!Property) _missingMdxReference("Property", true);
-    if (!Row) _missingMdxReference("Row", true);
-    return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.h1, {
-                children: "Errors"
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                children: "In this guide, we will talk about what happens when something goes wrong while you work with the API. Mistakes happen, and mostly they will be yours, not ours. Let's look at some status codes and error types you might encounter.",
-                ...{
-                    className: "lead"
-                }
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                children: "You can tell if your request was successful by checking the status code when receiving an API response. If a response comes back unsuccessful, you can use the error type and error message to figure out what has gone wrong and do some rudimentary debugging (before contacting support)."
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Note, {
-                children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                    children: "Before reaching out to support with an error, please be aware that 99% of all\nreported errors are, in fact, user errors. Therefore, please carefully check\nyour code before contacting Protocol support."
-                })
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.hr, {}),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.h2, {
-                id: "status-codes",
-                children: "Status codes"
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                children: "Here is a list of the different categories of status codes returned by the Protocol API. Use these to understand if a request was successful."
-            }),
-            "\n",
-            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Properties, {
-                children: [
-                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Property, {
-                        name: "2xx",
-                        children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                            children: "A 2xx status code indicates a successful response."
-                        })
-                    }),
-                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Property, {
-                        name: "4xx",
-                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                            children: [
-                                "A 4xx status code indicates a client error — this means it's a ",
-                                react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.em, {
-                                    children: "you"
-                                }),
-                                "\nproblem."
-                            ]
-                        })
-                    }),
-                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Property, {
-                        name: "5xx",
-                        children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                            children: "A 5xx status code indicates a server error — you won't be seeing these."
-                        })
-                    })
-                ]
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.hr, {}),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.h2, {
-                id: "error-types",
-                children: "Error types"
-            }),
-            "\n",
-            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Row, {
-                children: [
-                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Col, {
-                        children: [
-                            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                                children: "Whenever a request is unsuccessful, the Protocol API will return an error response with an error type and message. You can use this information to understand better what has gone wrong and how to fix it. Most of the error messages are pretty helpful and actionable."
-                            }),
-                            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                                children: "Here is a list of the two error types supported by the Protocol API — use these to understand what you have done wrong."
-                            }),
-                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Properties, {
-                                children: [
-                                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Property, {
-                                        name: "api_error",
-                                        children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                                            children: "This means that we made an error, which is highly speculative and unlikely."
-                                        })
-                                    }),
-                                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Property, {
-                                        name: "invalid_request",
-                                        children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                                            children: "This means that you made an error, which is much more likely."
-                                        })
-                                    })
-                                ]
-                            })
-                        ]
-                    }),
-                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Col, {
-                        children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.pre, {
-                            language: "bash",
-                            code: '{\n  "type": "api_error",\n  "message": "No way this is happening!?",\n  "documentation_url": "https://protocol.chat/docs/errors/api_error"\n}\n',
-                            children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                                className: "language-bash",
-                                children: '<span><span style="color: var(--shiki-color-text)">{</span></span>\n<span><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">&quot;type&quot;</span><span style="color: var(--shiki-color-text)">: </span><span style="color: var(--shiki-token-string-expression)">&quot;api_error&quot;</span><span style="color: var(--shiki-color-text)">,</span></span>\n<span><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">&quot;message&quot;</span><span style="color: var(--shiki-color-text)">: </span><span style="color: var(--shiki-token-string-expression)">&quot;No way this is happening!?&quot;</span><span style="color: var(--shiki-color-text)">,</span></span>\n<span><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">&quot;documentation_url&quot;</span><span style="color: var(--shiki-color-text)">: </span><span style="color: var(--shiki-token-string-expression)">&quot;https://protocol.chat/docs/errors/api_error&quot;</span></span>\n<span><span style="color: var(--shiki-color-text)">}</span></span>\n<span></span>'
-                            }),
-                            ...{
-                                title: "Error response"
-                            }
-                        })
-                    })
-                ]
-            })
-        ]
-    });
-}
-function MDXContent(props = {}) {
-    const { wrapper: MDXLayout  } = Object.assign({}, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components);
-    return MDXLayout ? react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(MDXLayout, Object.assign({}, props, {
-        children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_createMdxContent, props)
-    })) : _createMdxContent(props);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MDXContent);
-function _missingMdxReference(id, component) {
-    throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-const getStaticProps = ()=>({
-        props: JSON.parse(JSON.stringify({
-            _provideComponents: _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents,
-            description,
-            sections,
-            title
-        }))
-    });
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"getStaticProps\": () => (/* binding */ getStaticProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mdx-js/react */ \"@mdx-js/react\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__]);\n_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n/*@jsxRuntime automatic @jsxImportSource react*/ \n\nconst title = \"Data Integration\";\nconst description = \"In this guide, we will talk about what happens when something goes wrong while you work with the API.\";\nconst sections = [\n    {\n        title: \"Services\",\n        id: \"services\",\n        ...undefined\n    },\n    {\n        title: \"Solutions\",\n        id: \"solutions\",\n        ...undefined\n    }\n];\nfunction _createMdxContent(props) {\n    const _components = Object.assign({\n        h1: \"h1\",\n        p: \"p\",\n        hr: \"hr\",\n        h2: \"h2\",\n        em: \"em\",\n        pre: \"pre\",\n        code: \"code\"\n    }, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components), { Note , Properties , Property , Row , Col  } = _components;\n    if (!Col) _missingMdxReference(\"Col\", true, \"40:3-55:9\");\n    if (!Note) _missingMdxReference(\"Note\", true, \"10:1-14:8\");\n    if (!Properties) _missingMdxReference(\"Properties\", true, \"22:1-33:14\");\n    if (!Property) _missingMdxReference(\"Property\", true, \"23:3-25:14\");\n    if (!Row) _missingMdxReference(\"Row\", true, \"39:1-67:7\");\n    return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h1, {\n                children: \"Data Integration\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                children: \"In this guide, we will talk about what happens when something goes wrong while you work with the API. Mistakes happen, and mostly they will be yours, not ours. Let's look at some status codes and error types you might encounter.\",\n                ...{\n                    className: \"lead\"\n                }\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                children: \"You can tell if your request was successful by checking the status code when receiving an API response. If a response comes back unsuccessful, you can use the error type and error message to figure out what has gone wrong and do some rudimentary debugging (before contacting support).\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Note, {\n                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                    children: \"Before reaching out to support with an error, please be aware that 99% of all\\nreported errors are, in fact, user errors. Therefore, please carefully check\\nyour code before contacting Protocol support.\"\n                })\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {\n                id: \"services\",\n                children: \"Services\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                children: \"Here is a list of the different categories of status codes returned by the Protocol API. Use these to understand if a request was successful.\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Properties, {\n                children: [\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Property, {\n                        name: \"2xx\",\n                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                            children: \"A 2xx status code indicates a successful response.\"\n                        })\n                    }),\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Property, {\n                        name: \"4xx\",\n                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {\n                            children: [\n                                \"A 4xx status code indicates a client error — this means it's a \",\n                                (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {\n                                    children: \"you\"\n                                }),\n                                \"\\nproblem.\"\n                            ]\n                        })\n                    }),\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Property, {\n                        name: \"5xx\",\n                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                            children: \"A 5xx status code indicates a server error — you won't be seeing these.\"\n                        })\n                    })\n                ]\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {\n                id: \"solutions\",\n                children: \"Solutions\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Row, {\n                children: [\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Col, {\n                        children: [\n                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                                children: \"Whenever a request is unsuccessful, the Protocol API will return an error response with an error type and message. You can use this information to understand better what has gone wrong and how to fix it. Most of the error messages are pretty helpful and actionable.\"\n                            }),\n                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                                children: \"Here is a list of the two error types supported by the Protocol API — use these to understand what you have done wrong.\"\n                            }),\n                            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Properties, {\n                                children: [\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Property, {\n                                        name: \"api_error\",\n                                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                                            children: \"This means that we made an error, which is highly speculative and unlikely.\"\n                                        })\n                                    }),\n                                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Property, {\n                                        name: \"invalid_request\",\n                                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                                            children: \"This means that you made an error, which is much more likely.\"\n                                        })\n                                    })\n                                ]\n                            })\n                        ]\n                    }),\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Col, {\n                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {\n                            language: \"bash\",\n                            code: '{\\n  \"type\": \"api_error\",\\n  \"message\": \"No way this is happening!?\",\\n  \"documentation_url\": \"https://protocol.chat/docs/errors/api_error\"\\n}\\n',\n                            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                                className: \"language-bash\",\n                                children: '<span><span style=\"color: var(--shiki-color-text)\">{</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;type&quot;</span><span style=\"color: var(--shiki-color-text)\">: </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;api_error&quot;</span><span style=\"color: var(--shiki-color-text)\">,</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;message&quot;</span><span style=\"color: var(--shiki-color-text)\">: </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;No way this is happening!?&quot;</span><span style=\"color: var(--shiki-color-text)\">,</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;documentation_url&quot;</span><span style=\"color: var(--shiki-color-text)\">: </span><span style=\"color: var(--shiki-token-string-expression)\">&quot;https://protocol.chat/docs/errors/api_error&quot;</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">}</span></span>\\n<span></span>'\n                            }),\n                            ...{\n                                title: \"Error response\"\n                            }\n                        })\n                    })\n                ]\n            })\n        ]\n    });\n}\nfunction MDXContent(props = {}) {\n    const { wrapper: MDXLayout  } = Object.assign({}, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components);\n    return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, Object.assign({}, props, {\n        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, props)\n    })) : _createMdxContent(props);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MDXContent);\nfunction _missingMdxReference(id, component, place) {\n    throw new Error(\"Expected \" + (component ? \"component\" : \"object\") + \" `\" + id + \"` to be defined: you likely forgot to import, pass, or provide it.\" + (place ? \"\\nIt’s referenced in your code at `\" + place + \"` in `/Users/mike/Projects/tailwindui-protocol/Zelar/src/pages/errors.mdx`\" : \"\"));\n}\nconst getStaticProps = ()=>({\n        props: JSON.parse(JSON.stringify({\n            _provideComponents: _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents,\n            description,\n            sections,\n            title\n        }))\n    });\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvZXJyb3JzLm1keC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7OztNQUFhQSxjQUNYOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzBCQUVBOzs7OzBCQUVGOzs7Ozs7OzBCQUVBOzs7Ozs4QkFHRTs7Ozs7Ozs7MEJBT0M7Ozs7MEJBRUg7Ozs7Ozs7O3NDQUlJOzs7Ozs7O2dDQUdBO2dDQUFBQyxzREFBQUEsQ0FBQUMsWUFBQUMsRUFBQTs4Q0FBZ0U7O2dDQUFJOzZCQUFBOzs7Ozs7c0NBSXBFOzs7Ozs7Ozs7OzBCQU1EOzs7Ozs7OzswQ0FLQzs7OzBDQUVBOzs7Ozs7O3NEQUlJOzs7Ozs7c0RBR0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly90YWlsd2luZHVpLXByb3RvY29sLy4vc3JjL3BhZ2VzL2Vycm9ycy5tZHg/MzExMiJdLCJuYW1lcyI6WyJkZXNjcmlwdGlvbiIsIl9qc3giLCJfY29tcG9uZW50cyIsImVtIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/pages/errors.mdx\n");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-runtime":
+/*!************************************!*\
+  !*** external "react/jsx-runtime" ***!
+  \************************************/
 /***/ ((module) => {
 
 module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
-/***/ 7834:
+/***/ "@mdx-js/react":
+/*!********************************!*\
+  !*** external "@mdx-js/react" ***!
+  \********************************/
 /***/ ((module) => {
 
 module.exports = import("@mdx-js/react");;
@@ -211,7 +50,7 @@ module.exports = import("@mdx-js/react");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(1582));
+var __webpack_exports__ = (__webpack_exec__("./src/pages/errors.mdx"));
 module.exports = __webpack_exports__;
 
 })();

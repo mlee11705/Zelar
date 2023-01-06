@@ -1,185 +1,42 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 999;
-exports.ids = [999];
+exports.id = "pages/authentication";
+exports.ids = ["pages/authentication"];
 exports.modules = {
 
-/***/ 1248:
+/***/ "./src/pages/authentication.mdx":
+/*!**************************************!*\
+  !*** ./src/pages/authentication.mdx ***!
+  \**************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7834);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__]);
-_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-/*@jsxRuntime automatic @jsxImportSource react*/ 
-
-const title = "Authentication";
-const description = "In this guide, we’ll look at how authentication works. Protocol offers two ways to authenticate your API requests: Basic authentication and OAuth2 with a token.";
-const sections = [
-    {
-        title: "Basic authentication",
-        id: "basic-authentication",
-        ...undefined
-    },
-    {
-        title: "OAuth2 with bearer token",
-        id: "o-auth2-with-bearer-token",
-        ...undefined
-    },
-    {
-        title: "Using an SDK",
-        id: "using-an-sdk",
-        ...undefined
-    }
-];
-function _createMdxContent(props) {
-    const _components = Object.assign({
-        h1: "h1",
-        p: "p",
-        h2: "h2",
-        pre: "pre",
-        code: "code",
-        a: "a"
-    }, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components), { Button  } = _components;
-    if (!Button) _missingMdxReference("Button", true);
-    return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.h1, {
-                children: "Authentication"
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                children: "You'll need to authenticate your requests to access any of the endpoints in the Protocol API. In this guide, we'll look at how authentication works. Protocol offers two ways to authenticate your API requests: Basic authentication and OAuth2 with a token — OAuth2 is the recommended way.",
-                ...{
-                    className: "lead"
-                }
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.h2, {
-                id: "basic-authentication",
-                children: "Basic authentication"
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                children: "With basic authentication, you use your username and password to authenticate your HTTP requests. Unless you have a very good reason, you probably shouldn't use basic auth. Here's how to authenticate using cURL:"
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.pre, {
-                language: "bash",
-                code: "curl https://api.protocol.chat/v1/conversations \\\n  -u username:password\n",
-                children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                    className: "language-bash",
-                    children: '<span><span style="color: var(--shiki-color-text)">curl https://api.protocol.chat/v1/conversations \\</span></span>\n<span><span style="color: var(--shiki-color-text)">  -u username:password</span></span>\n<span></span>'
-                }),
-                ...{
-                    title: "Example request with basic auth"
-                }
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                children: "Please don't commit your Protocol password to GitHub!"
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.h2, {
-                id: "o-auth2-with-bearer-token",
-                children: "OAuth2 with bearer token"
-            }),
-            "\n",
-            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [
-                    "The recommended way to authenticate with the Protocol API is by using OAuth2. When establishing a connection using OAuth2, you will need your access token — you will find it in the ",
-                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.a, {
-                        href: "#",
-                        children: "Protocol dashboard"
-                    }),
-                    " under API settings. Here's how to add the token to the request header using cURL:"
-                ]
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.pre, {
-                language: "bash",
-                code: 'curl https://api.protocol.chat/v1/conversations \\\n  -H "Authorization: Bearer {token}"\n',
-                children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.code, {
-                    className: "language-bash",
-                    children: '<span><span style="color: var(--shiki-color-text)">curl https://api.protocol.chat/v1/conversations \\</span></span>\n<span><span style="color: var(--shiki-color-text)">  -H </span><span style="color: var(--shiki-token-string-expression)">&quot;Authorization: Bearer {token}&quot;</span></span>\n<span></span>'
-                }),
-                ...{
-                    title: "Example request with bearer token"
-                }
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.p, {
-                children: "Always keep your token safe and reset it if you suspect it has been compromised."
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.h2, {
-                id: "using-an-sdk",
-                children: "Using an SDK"
-            }),
-            "\n",
-            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [
-                    "If you use one of our official SDKs, you won't have to worry about any of the above — fetch your access token from the ",
-                    react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components.a, {
-                        href: "#",
-                        children: "Protocol dashboard"
-                    }),
-                    " under API settings, and the client library will take care of the rest. All the client libraries use OAuth2 behind the scenes."
-                ]
-            }),
-            "\n",
-            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "not-prose",
-                children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Button, {
-                    href: "/sdks",
-                    variant: "text",
-                    arrow: "right",
-                    children: "Check out our list of first-party SDKs"
-                })
-            })
-        ]
-    });
-}
-function MDXContent(props = {}) {
-    const { wrapper: MDXLayout  } = Object.assign({}, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components);
-    return MDXLayout ? react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(MDXLayout, Object.assign({}, props, {
-        children: react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_createMdxContent, props)
-    })) : _createMdxContent(props);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MDXContent);
-function _missingMdxReference(id, component) {
-    throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-const getStaticProps = ()=>({
-        props: JSON.parse(JSON.stringify({
-            _provideComponents: _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents,
-            description,
-            sections,
-            title
-        }))
-    });
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"getStaticProps\": () => (/* binding */ getStaticProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mdx-js/react */ \"@mdx-js/react\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__]);\n_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n/*@jsxRuntime automatic @jsxImportSource react*/ \n\nconst title = \"Cloud Native Consulting\";\nconst description = \"In this guide, we’ll look at how authentication works. Protocol offers two ways to authenticate your API requests: Basic authentication and OAuth2 with a token.\";\nconst sections = [\n    {\n        title: \"Services\",\n        id: \"services\",\n        ...undefined\n    },\n    {\n        title: \"Solutions\",\n        id: \"solutions\",\n        ...undefined\n    }\n];\nfunction _createMdxContent(props) {\n    const _components = Object.assign({\n        h1: \"h1\",\n        p: \"p\",\n        h2: \"h2\",\n        pre: \"pre\",\n        code: \"code\",\n        a: \"a\"\n    }, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components), { Button  } = _components;\n    if (!Button) _missingMdxReference(\"Button\", true, \"25:3-30:5\");\n    return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h1, {\n                children: \"Cloud Native Consulting\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                children: \"You'll need to authenticate your requests to access any of the endpoints in the Protocol API. In this guide, we'll look at how authentication works. Protocol offers two ways to authenticate your API requests: Basic authentication and OAuth2 with a token — OAuth2 is the recommended way.\",\n                ...{\n                    className: \"lead\"\n                }\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {\n                id: \"services\",\n                children: \"Services\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                children: \"With basic authentication, you use your username and password to authenticate your HTTP requests. Unless you have a very good reason, you probably shouldn't use basic auth. Here's how to authenticate using cURL:\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {\n                language: \"bash\",\n                code: \"curl https://api.protocol.chat/v1/conversations \\\\\\n  -u username:password\\n\",\n                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {\n                    className: \"language-bash\",\n                    children: '<span><span style=\"color: var(--shiki-color-text)\">curl https://api.protocol.chat/v1/conversations \\\\</span></span>\\n<span><span style=\"color: var(--shiki-color-text)\">  -u username:password</span></span>\\n<span></span>'\n                }),\n                ...{\n                    title: \"Example request with basic auth\"\n                }\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {\n                children: \"Please don't commit your Protocol password to GitHub!\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {\n                id: \"solutions\",\n                children: \"Solutions\"\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {\n                children: [\n                    \"If you use one of our official SDKs, you won't have to worry about any of the above — fetch your access token from the \",\n                    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {\n                        href: \"#\",\n                        children: \"Protocol dashboard\"\n                    }),\n                    \" under API settings, and the client library will take care of the rest. All the client libraries use OAuth2 behind the scenes.\"\n                ]\n            }),\n            \"\\n\",\n            (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"div\", {\n                className: \"not-prose\",\n                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Button, {\n                    href: \"/sdks\",\n                    variant: \"text\",\n                    arrow: \"right\",\n                    children: \"Check out our list of first-party SDKs\"\n                })\n            })\n        ]\n    });\n}\nfunction MDXContent(props = {}) {\n    const { wrapper: MDXLayout  } = Object.assign({}, (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents)(), props.components);\n    return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, Object.assign({}, props, {\n        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, props)\n    })) : _createMdxContent(props);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MDXContent);\nfunction _missingMdxReference(id, component, place) {\n    throw new Error(\"Expected \" + (component ? \"component\" : \"object\") + \" `\" + id + \"` to be defined: you likely forgot to import, pass, or provide it.\" + (place ? \"\\nIt’s referenced in your code at `\" + place + \"` in `/Users/mike/Projects/tailwindui-protocol/Zelar/src/pages/authentication.mdx`\" : \"\"));\n}\nconst getStaticProps = ()=>({\n        props: JSON.parse(JSON.stringify({\n            _provideComponents: _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__.useMDXComponents,\n            description,\n            sections,\n            title\n        }))\n    });\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvYXV0aGVudGljYXRpb24ubWR4LmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O01BQWFBLGNBQ1g7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzBCQUVBOzs7OzBCQUVGOzs7Ozs7OzswQkFFRzs7OzswQkFFSDs7Ozs7Ozs7Ozs7Ozs7OzswQkFPQTs7Ozs7MEJBR0c7Ozs7O29CQUVIO29CQUFBQyxzREFBQUEsQ0FBQUMsWUFBQUMsQ0FBQTs7a0NBQXdIOztvQkFBc0I7aUJBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly90YWlsd2luZHVpLXByb3RvY29sLy4vc3JjL3BhZ2VzL2F1dGhlbnRpY2F0aW9uLm1keD9hYTFjIl0sIm5hbWVzIjpbImRlc2NyaXB0aW9uIiwiX2pzeCIsIl9jb21wb25lbnRzIiwiYSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/pages/authentication.mdx\n");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-runtime":
+/*!************************************!*\
+  !*** external "react/jsx-runtime" ***!
+  \************************************/
 /***/ ((module) => {
 
 module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
-/***/ 7834:
+/***/ "@mdx-js/react":
+/*!********************************!*\
+  !*** external "@mdx-js/react" ***!
+  \********************************/
 /***/ ((module) => {
 
 module.exports = import("@mdx-js/react");;
@@ -193,7 +50,7 @@ module.exports = import("@mdx-js/react");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(1248));
+var __webpack_exports__ = (__webpack_exec__("./src/pages/authentication.mdx"));
 module.exports = __webpack_exports__;
 
 })();

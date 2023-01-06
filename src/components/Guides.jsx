@@ -5,24 +5,24 @@ const guides = [
   {
     href: '/authentication',
     name: '2022 Top DevOps Resources ',
-    description: 'A resource bundle every DevOps pro needs 🚀 Free DevOps Courses and Tutorials for Beginners and Intermediates 🚀 Top 2022 Kubernetes Courses 🚀 Top 180 Kubernetes Tools for DevOps Engineers 🚀 2400+ Questions and Exercises for DevOps Interviews by Arie Bregman',
+    description: 'A resource bundle every DevOps pro needs 🚀 Top 180 Kubernetes Tools for DevOps Engineers 🚀 2400+ Questions and Exercises for DevOps Interviews by Arie Bregman',
   },
   {
     href: '/pagination',
     name: 'Top Kubernetes Blogs, Slack Communities, Journals, and Podcasts',
-    description: 'Kubernetes can be complex and frustrating to use, especially for beginners. Fortunately, the growing developer community offers plenty of Kubernetes-focused blogs, podcasts, journals, and newsletters that give advice and answer urgent questions.',
+    description: 'The growing developer community offers plenty of Kubernetes-focused blogs, podcasts, and journals that answer urgent questions.',
   },
   {
     href: '/errors',
     name: 'Free DevOps Courses and Tutorials for Beginners and Intermediate',
     description:
-      'A collection of the best free resources to learn Docker, Kubernetes, Jenkins, Maven, Ansible, and other essential DevOps Courses to become a DevOps engineer in 2022. With DevOps, companies deploy codes 30 times faster than before.',
+      'A collection of the best free resources to learn Docker, Kubernetes, and other DevOps essentials.',
   },
   {
     href: '/webhooks',
     name: '150+ Remote DevOps Jobs',
     description:
-      'LDevOps engineer ranks #2 on Glassdoor’s 50 Best Jobs in America rankings. 60% of hiring managers are looking to fill DevOps engineer positions, according to a study by The Linux Foundation and tech jobs site Dice. I’m sharing DevOps jobs you can work for remotely and earn a 6-figure salary.',
+      'DevOps engineer ranks #2 on Glassdoor’s 50 Best Jobs. 60% of hiring managers are filling DevOps positions. I’m sharing jobs you can work for remotely and earn 6-figures',
   },
 ]
 
