@@ -188,29 +188,29 @@ export const navigation = [
     title: 'Services',
     links: [
       { title: 'Overview', href: '/' },
-      { title: 'Case studies', href: '/quickstart' },
       { title: 'Kubernetes Consulting', href: '/sdks' },
       { title: 'Cloud Native Consulting', href: '/authentication' },
       { title: 'Open Policy Agent', href: '/pagination' },
       { title: 'Data Integration', href: '/errors' },
       { title: 'Product Engineering', href: '/webhooks' },
       { title: 'Cybersecurity Consulting', href: '/webhooks' },
+      { title: 'Office 365', href: '/webhooks' },
+      { title: 'Google Cloud', href: '/webhooks' },
+    ],
+  },
+    {
+    title: 'Products',
+    links: [
+      { title: 'Klusternetes', href: '/klusternetes' },
     ],
   },
   {
     title: 'Blog',
     links: [
-      { title: 'Celito Tech', href: '/contacts' },
-      { title: 'Test Prep 24', href: '/conversations' },
-      { title: 'Wave Pharma Limited', href: '/messages' },
-      { title: 'Wildcraft', href: '/groups' },
-      { title: 'Nexon Paints', href: '/attachments' },
-    ],
-  },
-  {
-    title: 'Products',
-    links: [
-      { title: 'Klusternetes', href: '/klusternetes' },
+      { title: 'Case studies', href: '/quickstart' },
+      { title: 'Kubernetes', href: '/contacts' },
+      { title: 'OPA', href: '/conversations' },
+      { title: 'CLoud Native', href: '/messages' },
     ],
   },
 ]

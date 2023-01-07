@@ -6,11 +6,13 @@ import { Heading } from '@/components/Heading'
 export const description =
   'Learn everything there is to know about the Protocol API and integrate Protocol into your product.'
 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 <HeroPattern />
 
 <h1 class="text-[3.75rem] font-bold leading-[5rem] mb-4"> Zelar is your bleeding edge software team</h1>
 
-Over years of solid experience, Zelarsoft is one of the trusted technology development partners to design, deliver and support business vision from beginning to the end. {{ className: 'lead' }}
+Startups are messy. We understand your needs expand and contract so when the plan changes course, it's no surprise to us.{{ className: 'lead' }}
 
 <div className="not-prose mb-16 mt-6 flex gap-3">
   <Button href="/quickstart" arrow="right" children="Get started" />
@@ -41,7 +43,33 @@ Over years of solid experience, Zelarsoft is one of the trusted technology devel
   </div>
 </div>
 
-<h1 class="text-[1.5rem] font-bold leading-[0rem] my-4">Our Clients</h1>
+<Guides />
+
+<Resources />
+
+<div className="not-prose">
+  <Button className="text-lg"
+    href="/sdks"
+    variant="text"
+    arrow="right"
+    children="View all services"
+  />
+</div>
+
+<Heading level={2} id="guides" className="text-4xl">
+        Stay in Touch
+      </Heading>
+
+We believe it is important to stay up-to-date on the latest as it relates to performance and optimization. [Join our newsletter](#) and never miss out on breaking industry news again. {{ className: 'lead' }}
+
+<div class="relative">
+  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+  </div>
+  <input type="text" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email"/>
+</div>
+
+<h1 class="text-[1.5rem] font-bold leading-[0rem] my-4 mt-24">Our Clients</h1>
 
 <div class="bg-transparent mt-12 mb-16">
   <div class="mx-auto max-w-7xl">
@@ -63,30 +91,4 @@ Over years of solid experience, Zelarsoft is one of the trusted technology devel
       </div>
     </div>
   </div>
-</div>
-
-<Resources />
-
-<div className="not-prose">
-  <Button className="text-lg"
-    href="/sdks"
-    variant="text"
-    arrow="right"
-    children="View all services"
-  />
-</div>
-
-<Guides />
-
-<Heading level={2} id="guides" className="text-4xl">
-        Stay in Touch
-      </Heading>
-
-We believe it is important to stay up-to-date on the latest as it relates to performance and optimization. [Join our newsletter](#) and never miss out on breaking industry news again. {{ className: 'lead' }}
-
-<div class="relative">
-  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-  </div>
-  <input type="text" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email"/>
 </div>
