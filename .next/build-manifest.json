@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/webhooks": [
+    "/quickstart": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/webhooks.js"
+      "static/chunks/pages/quickstart.js"
     ]
   },
   "ampFirstPages": []
