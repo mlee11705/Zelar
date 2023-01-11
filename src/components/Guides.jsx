@@ -1,11 +1,13 @@
 import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
+import { Icon } from '@iconify/react';
 
 const guides = [
   {
     href: '/authentication',
     name: '2022 Top DevOps Resources ',
     description: 'A resource bundle every DevOps pro needs 🚀 Top 180 Kubernetes Tools for DevOps Engineers 🚀 2400+ Questions and Exercises for DevOps Interviews by Arie Bregman',
+    views: '520,839 views',
   },
   {
     href: '/pagination',
@@ -39,6 +41,11 @@ export function Guides() {
               {guide.name}
             </h3>
             <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+  <Icon style={{ display: "inline-block" }} icon="entypo:bar-graph" />
+  <span className="ml-2 mb-4 mt-2" style={{ display: "inline-block" }}>{guide.views}</span>
+</p>
+
+            <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
               {guide.description}
             </p>
             <div class="mt-12 flex items-center">
@@ -50,14 +57,12 @@ export function Guides() {
           </div>
           <div class="ml-3">
             <p class="text-sm font-medium text-white my-0">
-              <a href="#">Vasu Maganti</a>
+              <a href="#">Vasu Maganti </a>
               <span aria-hidden="true">&middot;</span>
-              <span>CEO</span>
+              <span> CEO</span>
             </p>
             <div class="flex space-x-1 text-sm text-gray-500">
               <time datetime="2020-03-16">Mar 16, 2020</time>
-              <span aria-hidden="true">&middot;</span>
-              <span>182 likes</span>
             </div>
           </div>
         </div>
