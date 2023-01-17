@@ -14,7 +14,7 @@ import { CogIcon } from '@/components/icons/CogIcon'
 const resources = [
   {
     href: '/contacts',
-    name: 'Cloud Native Consulting',
+    name: 'Kubernetes',
     description:
       'Speed up your cloud native project with CloudOps’ expert advice and implementation. We help you navigate the ever-changing cloud native landscape.',
     icon: CogIcon,
@@ -28,7 +28,7 @@ const resources = [
   },
   {
     href: '/conversations',
-    name: 'Product Engineering',
+    name: 'Cloud Native',
     description:
       'Zelar modern software engineering approach enables companies to build scalable & future-ready software products.',
     icon: CartIcon,
@@ -56,7 +56,7 @@ const resources = [
   },
   {
     href: '/groups',
-    name: 'Devops',
+    name: 'Data integration',
     description:
       'Zelar offers provides DevOps-as-a-Service to help large enterprises and startups align their Development and Operations to achieve higher efficiency,',
     icon: UsersIcon,
@@ -65,6 +65,60 @@ const resources = [
       squares: [[0, 1]],
     },
   },
+    {
+    href: '/contacts',
+    name: 'Product Engineering',
+    description:
+      'Speed up your cloud native project with CloudOps’ expert advice and implementation. We help you navigate the ever-changing cloud native landscape.',
+    icon: CogIcon,
+    pattern: {
+      y: 16,
+      squares: [
+        [0, 1],
+        [1, 3],
+      ],
+    },
+  },
+  {
+    href: '/conversations',
+    name: 'Cybersecurity',
+    description:
+      'Zelar modern software engineering approach enables companies to build scalable & future-ready software products.',
+    icon: CartIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3],
+      ],
+    },
+  },
+  {
+    href: '/messages',
+    name: 'Office 365',
+    description:
+      'Are you scouting to have a single authorization tool that can cover the whole cloud native stack?',
+    icon: BoltIcon,
+    pattern: {
+      y: 32,
+      squares: [
+        [0, 2],
+        [1, 4],
+      ],
+    },
+  },
+  {
+    href: '/groups',
+    name: 'Google Cloud',
+    description:
+      'Zelar offers provides DevOps-as-a-Service to help large enterprises and startups align their Development and Operations to achieve higher efficiency,',
+    icon: UsersIcon,
+    pattern: {
+      y: 22,
+      squares: [[0, 1]],
+    },
+  },
+
 ]
 
 function ResourceIcon({ icon: Icon }) {
