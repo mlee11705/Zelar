@@ -30,10 +30,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/sdks": [
+    "/authentication": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/sdks.js"
+      "static/chunks/pages/authentication.js"
+    ],
+    "/contact": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/contact.js"
     ]
   },
   "ampFirstPages": []

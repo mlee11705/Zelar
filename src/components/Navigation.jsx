@@ -185,15 +185,23 @@ function NavigationGroup({ group, className }) {
 
 export const navigation = [
   {
+    title: 'Overview',
+    links: [
+      { title: 'About', href: '/' },
+      { title: 'Contact', href: '/contact' },
+      { title: 'Careers', href: '/authentication' },
+      { title: 'Team', href: '/pagination' },
+    ],
+  },
+  {
     title: 'Services',
     links: [
-      { title: 'Overview', href: '/' },
-      { title: 'Kubernetes Consulting', href: '/sdks' },
-      { title: 'Cloud Native Consulting', href: '/authentication' },
+      { title: 'Kubernetes', href: '/sdks' },
+      { title: 'Cloud Native', href: '/authentication' },
       { title: 'Open Policy Agent', href: '/pagination' },
       { title: 'Data Integration', href: '/errors' },
       { title: 'Product Engineering', href: '/webhooks' },
-      { title: 'Cybersecurity Consulting', href: '/webhooks' },
+      { title: 'Cybersecurity', href: '/webhooks' },
       { title: 'Office 365', href: '/webhooks' },
       { title: 'Google Cloud', href: '/webhooks' },
     ],
@@ -210,7 +218,7 @@ export const navigation = [
       { title: 'Case studies', href: '/quickstart' },
       { title: 'Kubernetes', href: '/contacts' },
       { title: 'OPA', href: '/conversations' },
-      { title: 'CLoud Native', href: '/messages' },
+      { title: 'Cloud Native', href: '/messages' },
     ],
   },
 ]
@@ -219,8 +227,6 @@ export function Navigation(props) {
   return (
     <nav {...props}>
       <ul role="list">
-        <TopLevelNavItem href="#">Team</TopLevelNavItem>
-        <TopLevelNavItem href="#">Blog</TopLevelNavItem>
         {navigation.map((group, groupIndex) => (
           <NavigationGroup
             key={group.title}
