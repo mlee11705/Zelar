@@ -5,8 +5,6 @@ export const description =
 
 You'll need to authenticate your requests to access any of the endpoints in the Protocol API. In this guide, we'll look at how authentication works. Protocol offers two ways to authenticate your API requests: Basic authentication and OAuth2 with a token — OAuth2 is the recommended way. {{ className: 'lead' }}
 
-## Services
-
 With basic authentication, you use your username and password to authenticate your HTTP requests. Unless you have a very good reason, you probably shouldn't use basic auth. Here's how to authenticate using cURL:
 
 ```bash {{ title: 'Example request with basic auth' }}
@@ -16,8 +14,6 @@ curl https://api.protocol.chat/v1/conversations \
 
 Please don't commit your Protocol password to GitHub!
 
-
-## Solutions
 
 If you use one of our official SDKs, you won't have to worry about any of the above — fetch your access token from the [Protocol dashboard](#) under API settings, and the client library will take care of the rest. All the client libraries use OAuth2 behind the scenes.
 
